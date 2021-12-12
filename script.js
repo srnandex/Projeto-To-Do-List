@@ -19,7 +19,12 @@ window.onload = function () {
 
     list.addEventListener('click', function(){
         console.log(event.target);
-        event.target.style.backgrondColor = 'rgb(228, 128, 128)'
+        let tarefasPin = document.querySelectorAll('.new');
+        for(keyy of tarefasPin){
+            keyy.classList.remove('selected');
+        }
+        event.target.classList.add("selected");
+        
     })
 
     let apagaList = document.getElementById('apaga-tudo');
