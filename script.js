@@ -18,7 +18,6 @@ window.onload = function () {
     })
 
     list.addEventListener('click', function(){
-        console.log(event.target);
         let tarefasPin = document.querySelectorAll('.new');
         for(keyy of tarefasPin){
             keyy.classList.remove('selected');
@@ -26,6 +25,25 @@ window.onload = function () {
         event.target.classList.add("selected");
         
     })
+    
+    
+    
+    list.addEventListener('dblclick', function(){
+        console.log(event.target.className.length);
+        if(event.target.className.length === 12){
+            event.target.classList.add("completed");
+        }
+        else{
+        event.target.classList.remove('completed');
+        }
+    })
+
+
+
+
+
+
+
 
     let apagaList = document.getElementById('apaga-tudo');
 
