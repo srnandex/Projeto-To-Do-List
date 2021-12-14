@@ -1,3 +1,9 @@
+
+*{
+    padding:0;
+    margin: 0;
+}
+
 .selected{
     background-color: rgb(128, 128, 128);
 }
@@ -5,3 +11,76 @@
     text-decoration: line-through solid rgb(0, 0, 0) ;
     color: rgb(78, 78, 78);
 }
+
+body{
+    background-color: green;
+}
+main{
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 3%;
+    width: 75%;
+    border-radius: 15px;
+}
+h1{
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: grey;
+}
+
+#texto-tarefa{
+    width: 20%;
+    height: 18px;
+}
+#criar-tarefa{
+    margin-left: 10px;
+    width: 90px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(26, 168, 224);
+    color: white;
+    font-size: 17px;
+}
+#lista-tarefas{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#apaga-tudo{
+    width: 120px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0;
+    background-color:rgb(114, 5, 5);
+    color: white;
+    font-size: 17px;
+}
+#remover-finalizados{
+    margin-left: 15px;
+    width: 180px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(43, 141, 233);
+    color: white;
+    font-size: 17px;
+}
+
+
+
+
+
+
+

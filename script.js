@@ -19,18 +19,22 @@ window.onload = function () {
 
     list.addEventListener('click', function(){
         let tarefasPin = document.querySelectorAll('.new');
+        if(event.target.className.length === 12 || event.target.className.length === 22){
+        for(keyy of tarefasPin){
+            keyy.classList.remove('selected');
+        }}
+        else{
         for(keyy of tarefasPin){
             keyy.classList.remove('selected');
         }
         event.target.classList.add("selected");
-        
+    }
     })
     
     
     
     list.addEventListener('dblclick', function(){
-        console.log(event.target.className.length);
-        if(event.target.className.length === 12){
+        if(event.target.className.length === 12 || event.target.className.length === 3){
             event.target.classList.add("completed");
         }
         else{
@@ -39,14 +43,7 @@ window.onload = function () {
     })
 
 
-
-
-
-
-
-
     let apagaList = document.getElementById('apaga-tudo');
-
     apagaList.addEventListener('click', function(){
         let apagaTarefa = document.querySelectorAll('.new');
         for(key of apagaTarefa){
@@ -54,7 +51,13 @@ window.onload = function () {
         }
     })
 
-
+    let apagaFin = document.getElementById('remover-finalizados');
+    apagaFin.addEventListener('click', function(){
+        let finaliTaref = document.querySelectorAll('.completed');
+        for(chav of finaliTaref){
+            chav.parentNode.removeChild(chav)
+        }
+    })
 
 
 
